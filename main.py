@@ -142,7 +142,7 @@ files_list = [folder_path+os.path.basename(f) for f in glob.glob(os.path.join(fo
 df = spark.read.option("header", "true").parquet(*files_list)
 print("row_count:",df.count())
 df.show()
-time.sleep(5)
+
 
 
 
